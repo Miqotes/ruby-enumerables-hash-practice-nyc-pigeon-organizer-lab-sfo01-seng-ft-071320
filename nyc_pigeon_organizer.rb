@@ -9,7 +9,7 @@ def nyc_pigeon_organizer(data)
         if !pigeons.keys.include? pigeon
           pigeons[pigeon] = {}
         end
-        
+        binding.pry
         if pigeons[pigeon][category].nil?
           pigeons[pigeon][category] = []
         end
