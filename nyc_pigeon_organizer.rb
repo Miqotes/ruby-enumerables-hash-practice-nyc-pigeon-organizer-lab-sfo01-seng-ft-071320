@@ -9,7 +9,7 @@ def nyc_pigeon_organizer(data)
         if !pigeons.keys.include? pigeon
           pigeons[pigeon] = {}
         end
-        binding.pry
+
         if pigeons[pigeon][category].nil?
           pigeons[pigeon][category] = []
         end
@@ -21,6 +21,7 @@ def nyc_pigeon_organizer(data)
         #}
         
         pigeons[pigeon][category] << value.to_s
+        binding.pry
       end
     end
   end
